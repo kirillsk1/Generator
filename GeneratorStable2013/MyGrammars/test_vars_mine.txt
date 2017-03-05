@@ -1,0 +1,28 @@
+_program := VarsInt, VarsReal, bodyStat{1..10}, "STOP"{0..1}, "END"
+bodyStat := statAssign{1..5} | "statFor"{1..2} | "statIf"{1..2} | "statIfThenElse"{1..2} | "statLogicalIf"{1..2}
+
+statAssign := realAssign
+realAssign := variables," = " , formula, ";"
+intAssign := intArray, " = " , intFormula, ";"
+formula := number, addMember{1..3}
+intFormula := intConst, addIntMember{1..3}
+addMember := addSign, number, addSign, variables | addSign, variables
+addIntMember := addSign, intConst, addSign, intArray | addSign, intArray
+addSign := "+" | "-"
+number := Rnd(1, 100) | Rnd(1, 40),".", "0"{0..3}, Rnd(1, 100)
+intConst := Rnd(1, 100)
+
+//blockvars := VarsInt, VarsReal
+
+VarsInt";" := VarInt{4}
+VarsReal ";" := VarReal{4}
+VarInt := Type, VarName AS Name, ";\n"
+VarName := NameCount("vInt")
+Type := "INT"
+
+VarReal := TypeR, VarNameR AS Name, ";\n"
+VarNameR := NameCount("vReal")
+TypeR := "REAL"
+
+intArray := #VarsInt.GetAllDeque().Name
+variables := #VarsInt.GetAllDeque().Name | #VarsReal.GetAllDeque().Name

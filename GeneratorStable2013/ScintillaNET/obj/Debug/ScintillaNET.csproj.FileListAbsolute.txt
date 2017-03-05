@@ -1,0 +1,12 @@
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\bin\Debug\ScintillaNET.XML
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\bin\Debug\ScintillaNET.dll
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\bin\Debug\ScintillaNET.pdb
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\ScintillaNET.csprojResolveAssemblyReference.cache
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\Scintilla.Forms.FindControl.resources
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\Scintilla.Forms.FindForm.resources
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\Scintilla.Forms.ReplaceControl.resources
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\Scintilla.Forms.ReplaceForm.resources
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\Scintilla.Forms.GoToLineDialog.resources
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\ScintillaNET.csproj.GenerateResource.Cache
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\ScintillaNET.dll
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\ScintillaNET\obj\Debug\ScintillaNET.pdb

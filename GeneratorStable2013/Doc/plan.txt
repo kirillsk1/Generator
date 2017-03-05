@@ -1,0 +1,38 @@
+Задаача Vars.
+Использование переменных в выражениях.
+1. Создать новую переменную - список в котором будут объеденены параметры, локальные и глоб. пер.
+TempList = Params + Vars.GetAllDeque();
+2. Выбрать из этого списка по норм. распр.
+UseVar = TempList[N(0,1)] //int v1
+3. Взять поле.
+UseName = UseVar.VarName //v1
+
+(Params + Vars.GetAllDeque())[N(0,1)].VarName
+
+Проблема 1. VarName, ParamName. Хочется скинуть и переменные и параметры в один список, но
+поля у этих разных объектов разные, поэтому не получится единообразно к ним обращяться.
+Хотелось бы Избежать нетерминала VarName, а только Name.
+Например, вместо
+Var := Type, VarName, ";\n"
+VarName := NameCount("v")
+Param := Type, ParamName
+ParamName := NameCount("p")
+
+писать
+Var := Type, VarName, ";\n"
+	Name := NameCount("v")
+Param := Type, ParamName
+	Name := NameCount("p")
+
+То есть какая-то вложенная именовка нетерминалов, но это нереально.
+
+Реально сделать псевдонимы для выражений.
+
+Var := Type, VarName AS Name, ";\n"
+VarName := NameCount("v")
+Param := Type, ParamName AS Name
+ParamName := NameCount("p")
+
+или проще:
+Var := Type, NameCount("v") AS Name, ";\n"
+Param := Type, NameCount("p") AS Name

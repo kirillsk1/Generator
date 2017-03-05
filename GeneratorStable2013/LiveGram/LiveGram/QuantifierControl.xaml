@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="LiveGram.QuantifierControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <StackPanel Name="stackPanel1" Orientation="Horizontal" >
+        <Border BorderThickness="5" BorderBrush="Yellow">
+            <StackPanel x:Name="quantPanel"></StackPanel>
+        </Border>
+        <Label Name="quantLabel"></Label>
+    </StackPanel>
+</UserControl>

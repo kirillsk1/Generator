@@ -1,0 +1,129 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F48DC451-3C08-4B8A-87B0-2E151E514DEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrammarCompiler</RootNamespace>
+    <AssemblyName>GrammarCompiler</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessArray.cs" />
+    <Compile Include="CounterDictionary.cs" />
+    <Compile Include="CycicKind.cs" />
+    <Compile Include="Derivation.cs" />
+    <Compile Include="DerivationContext.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="ExprOp.cs" />
+    <Compile Include="GenerateProgressEventArgs.cs" />
+    <Compile Include="GenerationMode.cs" />
+    <Compile Include="Generator.cs" />
+    <Compile Include="GrammarVisitors\BuildGraphVisitor.cs" />
+    <Compile Include="GrammarVisitors\CheckCyclesVisitor.cs" />
+    <Compile Include="GrammarVisitors\CyclesDetectVisitor.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandBase.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandForceEnum.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandMinRnd.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandNormRnd.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandPairs.cs" />
+    <Compile Include="GrammarVisitors\VisitorExpandRnd.cs" />
+    <Compile Include="GrammarVisitors\VisitorExtractNTSymbols.cs" />
+    <Compile Include="GrammarVisitors\WalkVisitorBase.cs" />
+    <Compile Include="PhraseHierarchy\AlternativeSet.cs" />
+    <Compile Include="PhraseHierarchy\IPhrase.cs" />
+    <Compile Include="PhraseHierarchy\NonTerminalCommon.cs" />
+    <Compile Include="PhraseHierarchy\Terminal.cs" />
+    <Compile Include="PhraseHierarchy\TransCallPhrase.cs" />
+    <Compile Include="PhraseHierarchy\PhraseBase.cs" />
+    <Compile Include="PhraseHierarchy\PhraseList.cs" />
+    <Compile Include="PhraseHierarchy\PlaceHolderAssignPhrase.cs" />
+    <Compile Include="PhraseHierarchy\PlaceHolderPhrase.cs" />
+    <Compile Include="PhraseHierarchy\QuantifiedPhrase.cs" />
+    <Compile Include="PhraseHierarchy\Seqence.cs" />
+    <Compile Include="PhraseHierarchy\NonTerminal.cs" />
+    <Compile Include="ResultSaver\ProcessTextEventArgs.cs" />
+    <Compile Include="SemanticLayer\LinkDirection.cs" />
+    <Compile Include="SemanticLayer\SemLink.cs" />
+    <Compile Include="Transforms\CollapseToOneBigRule.cs" />
+    <Compile Include="Transforms\GrammarTransforms.cs" />
+    <Compile Include="ResultSaver\ConcatResultSaver.cs" />
+    <Compile Include="ResultSaver\FileResultSaver.cs" />
+    <Compile Include="Formatter.cs" />
+    <Compile Include="ResultSaver\IResultSaver.cs" />
+    <Compile Include="PairEnumerator.cs" />
+    <Compile Include="SpecificGraphBuilder.cs" />
+    <Compile Include="Transforms\ToQuantifiers.cs" />
+    <Compile Include="Transforms\TransformStatistics.cs" />
+    <Compile Include="GenList.cs" />
+    <Compile Include="GenStruct.cs" />
+    <Compile Include="Grammar.cs" />
+    <Compile Include="GrammarOptions.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="ExprNumber.cs" />
+    <Compile Include="ListTrans.cs" />
+    <Compile Include="PhraseParser.cs" />
+    <Compile Include="PlaceHolderList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolArray.cs" />
+    <Compile Include="ProtocolSequence.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="transductor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphTools\GraphTools.csproj">
+      <Project>{94A6FCB1-DAEB-4ABF-BF9F-D0F74A2409B7}</Project>
+      <Name>GraphTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools2008.csproj">
+      <Project>{566DF7B2-73A7-4D7A-BD79-33538E7B8493}</Project>
+      <Name>Tools2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualStructure\VisualStructure2008.csproj">
+      <Project>{2B0CEB5D-51B2-484F-9C1C-849FA4D5CA19}</Project>
+      <Name>VisualStructure2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

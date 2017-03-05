@@ -1,0 +1,15 @@
+_programm := Vars,"void main() {", Stats, "}" 
+
+Stats := Stat | Stat, Stats
+Stat := Assign | For
+Assign := "A = ", Exprs //#Vars[0].Expr1
+For := "for (;;) {", Stats, "}"
+
+Exprs := Add | Add, Adds
+Add := Mul | Mul, Muls
+Mul := Rnd(10) | "(",Exprs,")"
+Adds := ("+"|"-"), Exprs
+Muls := ("*"|"/"), Add
+
+Vars := Var | Var, Vars
+Var := "int", NameCount("v")

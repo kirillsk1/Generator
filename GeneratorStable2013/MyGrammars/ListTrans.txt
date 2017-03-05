@@ -1,0 +1,12 @@
+programm  "\n":=  Vars, "--- test --- ", test1, test2, test3, test4, test5
+test1 := #Vars.Count(), #Vars.PeekBegin(), #Vars.Count()
+test2 := #Vars.Count(), #Vars.PopBegin().Type, #Vars.Count()
+test3 := #Vars.Count(), #Vars.PopEnd().Name, #Vars.Count()
+test4 := "a+", #Vars.AddBegin("hello"), "aend", #Vars.Count(), "v", #Vars, "vend"
+test5 := #Vars.AddBegin(100), #Vars
+
+Vars ";" := Var{3}
+Var := Type, VarName AS Name, ";\n"
+VarName := NameCount("v")
+Type := "int"
+

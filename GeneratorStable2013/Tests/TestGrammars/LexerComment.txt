@@ -1,0 +1,10 @@
+a//
+abc/*com*/def
+a/b
+a/**/b
+a//com
+a/*com*end*/b
+a*b
+a/*com*end/end*/b
+xx "hello\nworld" yy
+"hello\\world" "hello\world" "\t"

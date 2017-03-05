@@ -1,0 +1,17 @@
+F:\gs\GeneratorStable2013\GrammarCompiler\obj\Debug\ResolveAssemblyReference.cache
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\GrammarCompiler.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\GrammarCompiler.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\GraphTools.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Tools.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\VisualStructure.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.GraphViewerGDI.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.Drawing.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\GraphTools.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.GraphViewerGDI.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Tools.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.Drawing.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\VisualStructure.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\bin\Debug\Microsoft.GLEE.pdb
+F:\gs\GeneratorStable2013\GrammarCompiler\obj\Debug\GrammarCompiler.dll
+F:\gs\GeneratorStable2013\GrammarCompiler\obj\Debug\GrammarCompiler.pdb

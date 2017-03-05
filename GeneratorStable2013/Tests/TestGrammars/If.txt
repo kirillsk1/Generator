@@ -1,0 +1,4 @@
+ifStat := "if (", condition, ")", "{", "stat", "}"
+condition := rightSide, comparison, rightSide
+comparison := "<"
+rightSide := Rnd(0)

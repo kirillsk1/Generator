@@ -1,0 +1,7 @@
+main := b , func{2},  c
+//a := #5+4
+b := "i","k" | "j"
+func := rettype, name
+c := "c" // #b, #func[0].name
+rettype := "int" | "float" | "string"
+name := "func1" | "func2" | "func3" | "func4"

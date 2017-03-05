@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<program class="test">
+<params intArray="30" realArray="30" lengthArray="100" intIndex="20" />
+<body statAssign="1" statFor="1" statWhile="1"  statIf="1" statIfThenElse="0" statSwitch="0" />
+<statFor statAssign="1" statFor="1" statWhile="1" statIf="0" statIfThenElse="1" statBreak="1" statContinue="1" statSwitch="1" statGoTo="1"/>
+<statWhile statAssign="1" statFor="0" statWhile="0" statIf="1" statIfThenElse="0" statBreak="1" statContinue="1" statSwitch="0" />
+<statIf statAssign="1" statFor="1" statWhile="0" statIf="0" statIfThenElse="0" statSwitch="0" statGoTo="1" />
+<statIfThenElse statAssign="1" statFor="0" statWhile="1" statIf="1" statIfThenElse="0" statSwitch="0" statGoTo="1" />
+<statSwitch statAssign="1" statFor="1" statWhile="1" statIf="1" statIfThenElse="0" />
+</program>

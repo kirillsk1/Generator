@@ -1,0 +1,3 @@
+programm := a
+a := b{5}
+b := Let(), Rnd(90,120)

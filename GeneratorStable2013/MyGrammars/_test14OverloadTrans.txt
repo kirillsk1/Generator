@@ -1,0 +1,5 @@
+programm "\n" :=  a, b, c, d
+a := Hello(2+3)
+b := Hello("max")
+c := "term"
+d := Hello(c)

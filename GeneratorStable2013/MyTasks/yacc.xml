@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<postfix_expression rr="100 5 5 5 5 5 5 5" />
+	<unary_expression rr="100 5 5 5 5 5 5 5" />	
+	<relational_expression rr="100 5 5 5 5 5 5 5" />	
+	<equality_expression rr="10 3 3" />	
+	<assignment_operator rr="4" />
+	<declaration_specifiers rr="1 1 10" />
+	<shift_expression rr="5" />
+</Root>

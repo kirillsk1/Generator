@@ -1,0 +1,6 @@
+program := stat, stat, stat
+stat:= assign | if | while
+assign := "a=b+c; \n"
+if := "if { ", block, " };\n"
+while := "while { ", block, " };\n"
+block := "empty\n" | assign, "\n"

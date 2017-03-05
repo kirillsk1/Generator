@@ -1,0 +1,3 @@
+sentence := actor, "loves", flower//, "and" , flower
+actor := "mother" | "father"
+flower := "crocus" | "tulip"

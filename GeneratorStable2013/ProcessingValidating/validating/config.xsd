@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="program">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="params">
+					<xs:complexType>
+						<xs:attribute name="intArray" type="Vars" use="required" />
+						<xs:attribute name="realArray" type="Vars" use="required" />
+						<xs:attribute name="lengthArray" type="VarLength" use="required" />
+						<xs:attribute name="intIndex" type="Vars" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:attribute name="statAssign" type="TrueFalse" use="required" />
+						<xs:attribute name="statFor" type="TrueFalse" use="required" />
+						<xs:attribute name="statWhile" type="TrueFalse" use="required" />
+						<xs:attribute name="statIf" type="TrueFalse" use="required" />
+						<xs:attribute name="statIfThenElse" type="TrueFalse" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="statFor">
+					<xs:complexType>
+						<xs:attribute name="statAssign" type="TrueFalse" use="required" />
+						<xs:attribute name="statFor" type="TrueFalse" use="required" />
+						<xs:attribute name="statWhile" type="TrueFalse" use="required" />
+						<xs:attribute name="statIf" type="TrueFalse" use="required" />
+						<xs:attribute name="statIfThenElse" type="TrueFalse" use="required" />
+						<xs:attribute name="statBreak" type="TrueFalse" use="required" />
+						<xs:attribute name="statContinue" type="TrueFalse" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="statWhile">
+					<xs:complexType>
+						<xs:attribute name="statAssign" type="TrueFalse" use="required" />
+						<xs:attribute name="statFor" type="TrueFalse" use="required" />
+						<xs:attribute name="statWhile" type="TrueFalse" use="required" />
+						<xs:attribute name="statIf" type="TrueFalse" use="required" />
+						<xs:attribute name="statIfThenElse" type="TrueFalse" use="required" />
+						<xs:attribute name="statBreak" type="TrueFalse" use="required" />
+						<xs:attribute name="statContinue" type="TrueFalse" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="statIf">
+					<xs:complexType>
+						<xs:attribute name="statAssign" type="TrueFalse" use="required" />
+						<xs:attribute name="statFor" type="TrueFalse" use="required" />
+						<xs:attribute name="statWhile" type="TrueFalse" use="required" />
+						<xs:attribute name="statIf" type="TrueFalse" use="required" />
+						<xs:attribute name="statIfThenElse" type="TrueFalse" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="statIfThenElse">
+					<xs:complexType>
+						<xs:attribute name="statAssign" type="TrueFalse" use="required" />
+						<xs:attribute name="statFor" type="TrueFalse" use="required" />
+						<xs:attribute name="statWhile" type="TrueFalse" use="required" />
+						<xs:attribute name="statIf" type="TrueFalse" use="required" />
+						<xs:attribute name="statIfThenElse" type="TrueFalse" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="class" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+		<xs:simpleType name="TrueFalse">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Vars">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1" />
+			<xs:maxInclusive value="32000" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VarLength">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="100" />
+			<xs:maxInclusive value="32000" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

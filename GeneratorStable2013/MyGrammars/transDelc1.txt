@@ -1,0 +1,6 @@
+declaration\ 
+	:= declaration_specifiers, ";"\ 
+	| declaration_specifiers, init_declarator_list, ";" | ""
+
+declaration_specifiers := "declaration_specifiers"
+init_declarator_list := "init_declarator_list"

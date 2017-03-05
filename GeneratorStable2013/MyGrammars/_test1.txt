@@ -1,0 +1,5 @@
+program := vars, "int main() {", stat, "return 0; }"
+	vars := "int a[25]; int b[25]; int i;"
+	stat := assign | for
+		assign :=  "a[i]=b[i];"
+		for := "for (i=0; i<10; i++) {", assign, "}"

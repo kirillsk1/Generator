@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+<programm>
+	<assign cnt="5" />			
+	<stat>	
+	
+		<for>
+			<assign cnt="2" />
+		</for>
+		
+	</stat>	
+</programm>
+</Root>

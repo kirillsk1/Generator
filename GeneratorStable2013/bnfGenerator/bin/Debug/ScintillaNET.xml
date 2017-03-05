@@ -1,0 +1,1863 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScintillaNET</name>
+    </assembly>
+    <members>
+        <member name="T:Scintilla.Configuration.PropertyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.Property">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.Comment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.Import">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.If">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.IgnoredLine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Scintilla.Configuration.PropertyType.EmptyLine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Scintilla.Configuration.PropertyReadDelegate">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+            <param name="propertyType"></param>
+            <param name="key"></param>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Scintilla.Configuration.PropertiesReader">
+            <summary>
+            A class that reads in ths properties from the 
+            Justin Greenwood - justin.greenwood@gmail.com
+            </summary>
+        </member>
+        <member name="M:Scintilla.Configuration.PropertiesReader.Read(System.IO.FileInfo,Scintilla.Configuration.PropertyReadDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="propsFileInfo"></param>
+            <param name="propertyRead"></param>
+        </member>
+        <member name="M:Scintilla.Configuration.PropertiesReader.Evaluate(System.String,Scintilla.Configuration.PropertyGetValueDelegate,Scintilla.Configuration.PropertyContainsKeyDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.PropertiesReader.ReplaceVariableMatch(System.Text.RegularExpressions.Match)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.PropertiesReader.GetKeyValuePairs(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Scintilla.Configuration.SciTE.SciTEProperties">
+            <summary>
+            A class that encapsulates the properties
+            Justin Greenwood - justin.greenwood@gmail.com
+            </summary>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Scintilla.Configuration.SciTE.SciTEProperties.Keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Scintilla.Configuration.SciTE.SciTEProperties.Item(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.AddFileExtentionMapping(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ext"></param>
+            <param name="f"></param>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.GetLanguageFromExtension(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.GetExtensionListFromLanguage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.ContainsKey(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.PopulateScintillaConfig(Scintilla.Configuration.IScintillaConfig)">
+            <summary>
+            Apply the lexer style according to the scite config files
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.PopulateLexerConfig(Scintilla.Configuration.ILexerConfig)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.PopulateLanguageConfig(Scintilla.Configuration.ILanguageConfig,Scintilla.Configuration.ILexerConfigCollection)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.Evaluate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.ToString">
+            <summary>
+            This is a method I am using to test the properties file parser
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.Configuration.SciTE.SciTEProperties.PropertyRead(System.IO.FileInfo,Scintilla.Configuration.PropertyType,System.Collections.Generic.Queue{System.String},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="file"></param>
+            <param name="propertyType"></param>
+            <param name="keyQueue"></param>
+            <param name="key"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Scintilla.Forms.FindControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Forms.FindControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.Forms.FindControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Forms.FindForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Forms.FindForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.Forms.FindForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Forms.ReplaceForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Forms.ReplaceForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.Forms.ReplaceForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Forms.ReplaceControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Forms.ReplaceControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.Forms.ReplaceControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Forms.GoToLineDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Forms.GoToLineDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.Forms.GoToLineDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Scintilla.CachingIntCollection">
+            <summary>
+            For some properties, Scintilla does not allow us to query the value we set
+            so, in this case, we cache the value on the .NET side.
+            </summary>
+        </member>
+        <member name="T:Scintilla.CachingStringCollection">
+            <summary>
+            For some properties, Scintilla does not allow us to query the value we set
+            so, in this case, we cache the value on the .NET side.
+            </summary>
+        </member>
+        <member name="T:Scintilla.Printing.PageInformationBorder">
+            <summary>
+            Type of border to print for a Page Information section
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageInformationBorder.None">
+            <summary>
+            No border
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageInformationBorder.Top">
+            <summary>
+            Border along the top
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageInformationBorder.Bottom">
+            <summary>
+            Border along the bottom
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageInformationBorder.Box">
+            <summary>
+            A full border around the page information section
+            </summary>
+        </member>
+        <member name="T:Scintilla.Printing.InformationType">
+            <summary>
+            Type of data to display at one of the positions in a Page Information section
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.InformationType.Nothing">
+            <summary>
+            Nothing is displayed at the position
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.InformationType.PageNumber">
+            <summary>
+            The page number is displayed in the format "Page #"
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.InformationType.DocumentName">
+            <summary>
+            The document name is displayed
+            </summary>
+        </member>
+        <member name="T:Scintilla.Printing.PageInformation">
+            <summary>
+            Class for determining how and what to print for a header or footer.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageInformation.DefaultFont">
+            <summary>
+            Default font used for Page Information sections
+            </summary>
+        </member>
+        <member name="M:Scintilla.Printing.PageInformation.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:Scintilla.Printing.PageInformation.#ctor(Scintilla.Printing.PageInformationBorder,Scintilla.Printing.InformationType,Scintilla.Printing.InformationType,Scintilla.Printing.InformationType)">
+            <summary>
+            Normal Use Constructor
+            </summary>
+            <param name="eBorder">Border style</param>
+            <param name="eLeft">What to print on the left side of the page</param>
+            <param name="eCenter">What to print in the center of the page</param>
+            <param name="eRight">What to print on the right side of the page</param>
+        </member>
+        <member name="M:Scintilla.Printing.PageInformation.#ctor(System.Int32,System.Drawing.Font,Scintilla.Printing.PageInformationBorder,Scintilla.Printing.InformationType,Scintilla.Printing.InformationType,Scintilla.Printing.InformationType)">
+            <summary>
+            Full Constructor
+            </summary>
+            <param name="iMargin">Margin to use</param>
+            <param name="oFont">Font to use </param>
+            <param name="eBorder">Border style</param>
+            <param name="eLeft">What to print on the left side of the page</param>
+            <param name="eCenter">What to print in the center of the page</param>
+            <param name="eRight">What to print on the right side of the page</param>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Margin">
+            <summary>
+            Space between the Page Information section and the rest of the page
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Font">
+            <summary>
+            Font used in printing the Page Information section
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Border">
+            <summary>
+            Border style used for the Page Information section
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Left">
+            <summary>
+            Information printed on the left side of the Page Information section
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Center">
+            <summary>
+            Information printed in the center of the Page Information section
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Right">
+            <summary>
+            Information printed on the right side of the Page Information section
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Display">
+            <summary>
+            Whether there is a need to display this item, true if left, center, or right are not nothing.
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageInformation.Height">
+            <summary>
+            Height required to draw the Page Information section based on the options selected.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Printing.PageInformation.Draw(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Int32)">
+            <summary>
+            Draws the page information section in the specified rectangle
+            </summary>
+            <param name="oGraphics"></param>
+            <param name="oBounds"></param>
+            <param name="strDocumentName"></param>
+            <param name="iPageNumber"></param>
+        </member>
+        <member name="T:Scintilla.Printing.PageSettings">
+            <summary>
+            ScintillaNET derived class for handling printed page settings.  It holds information 
+            on how and what to print in the header and footer of pages.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageSettings.DefaultHeader">
+            <summary>
+            Default header style used when no header is provided.
+            </summary>
+        </member>
+        <member name="F:Scintilla.Printing.PageSettings.DefaultFooter">
+            <summary>
+            Default footer style used when no footer is provided.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Printing.PageSettings.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageSettings.Header">
+            <summary>
+            Page Information printed in header of the page
+            </summary>
+        </member>
+        <member name="P:Scintilla.Printing.PageSettings.Footer">
+            <summary>
+            Page Information printed in the footer of the page
+            </summary>
+        </member>
+        <member name="T:Scintilla.Printing.PrintDocument">
+            <summary>
+            ScintillaNET derived class for handling printing of source code from a Scintilla control.
+            </summary>
+        </member>
+        <member name="M:Scintilla.Printing.PrintDocument.#ctor(Scintilla.ScintillaControl)">
+            <summary>
+            Default Constructor
+            </summary>
+            <param name="oScintillaControl">Scintilla control being printed</param>
+        </member>
+        <member name="T:Scintilla.Range">
+            <summary>
+            A range within the editor. Start and End are both Positions.
+            </summary>
+        </member>
+        <member name="F:Scintilla.ScintillaControl.StyleNeededEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;StyleNeeded&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.CharAddedEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;CharAdded&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.SavePointReachedEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;SavePointReached&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.SavePointLeftEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;SavePointLeft&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.ModifyAttemptROEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;ModifyAttemptRO&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.SCKeyEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;SCKey&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.SCDoubleClickEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;SCDoubleClick&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.UpdateUIEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;UpdateUI&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.ModifiedEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;Modified&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.MacroRecordEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;MacroRecord&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.MarginClickEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;MarginClick&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.NeedShownEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;NeedShown&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.PaintedEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;Painted&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.UserListSelectionEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;UserListSelection&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.UriDroppedEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;UriDropped&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.DwellStartEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;DwellStart&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.DwellEndEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;DwellEnd&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.SCZoomEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;SCZoom&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.HotspotClickEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;HotspotClick&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.HotspotDoubleClickEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;HotspotDoubleClick&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.CallTipClickEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;CallTipClick&quot;]/*" />
+        </member>
+        <member name="F:Scintilla.ScintillaControl.AutoCSelectionEventKey">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\\Help\\GeneratedInclude.xml" path="root/Events/Event[@name=&quot;AutoCSelection&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CanRedo">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CanRedo&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCActive">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCActive&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CanPaste">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CanPaste&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CanUndo">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CanUndo&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsCallTipActive">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsCallTipActive&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Length">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Length&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CurrentPos">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CurrentPos&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Anchor_">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Anchor_&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsUndoCollection">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsUndoCollection&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.EndStyled">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;EndStyled&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsBufferedDraw">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsBufferedDraw&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.TabWidth">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;TabWidth&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SelectionAlpha">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;SelectionAlpha&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsSelEOLFilled">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsSelEOLFilled&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CaretPeriod">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CaretPeriod&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.StyleBits">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;StyleBits&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.MaxLineState">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;MaxLineState&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsCaretLineVisible">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsCaretLineVisible&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CaretLineBackgroundColor">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CaretLineBackgroundColor&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.AutoCSeparator">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;AutoCSeparator&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCCancelAtStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCCancelAtStart&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCChooseSingle">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCChooseSingle&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCIgnoreCase">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCIgnoreCase&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCAutoHide">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCAutoHide&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsAutoCDropRestOfWord">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsAutoCDropRestOfWord&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.AutoCTypeSeparator">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;AutoCTypeSeparator&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.AutoCMaxWidth">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;AutoCMaxWidth&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.AutoCMaxHeight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;AutoCMaxHeight&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Indent">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Indent&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsUseTabs">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsUseTabs&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsHScrollBar">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsHScrollBar&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsIndentationGuides">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsIndentationGuides&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.HighlightGuide">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;HighlightGuide&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CaretFore">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CaretFore&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsUsePalette">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsUsePalette&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsReadOnly">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsReadOnly&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SelectionStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;SelectionStart&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SelectionEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;SelectionEnd&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.PrintMagnification">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;PrintMagnification&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.PrintColorMode">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;PrintColorMode&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.FirstVisibleLine">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;FirstVisibleLine&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.LineCount">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;LineCount&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.MarginLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;MarginLeft&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.MarginRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;MarginRight&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsModify">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsModify&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.TextLength">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;TextLength&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.DirectFunction">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;DirectFunction&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.DirectPointer">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;DirectPointer&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsOvertype">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsOvertype&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CaretWidth">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CaretWidth&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.TargetStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;TargetStart&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.TargetEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;TargetEnd&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SearchFlags">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;SearchFlags&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsTabIndents">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsTabIndents&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.BackspaceUnIndents">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;BackspaceUnIndents&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.MouseDwellTime">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;MouseDwellTime&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.WrapMode">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;WrapMode&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.WrapVisualFlags">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;WrapVisualFlags&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.WrapVisualFlagsLocation">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;WrapVisualFlagsLocation&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.WrapStartIndent">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;WrapStartIndent&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.LayoutCache">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;LayoutCache&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.ScrollWidth">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;ScrollWidth&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsEndAtLastLine">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsEndAtLastLine&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsVScrollBar">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsVScrollBar&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsTwoPhaseDraw">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsTwoPhaseDraw&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsViewEOL">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsViewEOL&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.EdgeColumn">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;EdgeColumn&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.EdgeMode">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;EdgeMode&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.EdgeColor">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;EdgeColor&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.LinesOnScreen">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;LinesOnScreen&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsSelectionIsRectangle">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsSelectionIsRectangle&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Zoom">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Zoom&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.ModEventMask">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;ModEventMask&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsFocus">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsFocus&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Status">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Status&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsMouseDownCaptures">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsMouseDownCaptures&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Cursor_">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Cursor_&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.ControlCharSymbol">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;ControlCharSymbol&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.XOffset">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;XOffset&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.PrintWrapMode">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;PrintWrapMode&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SelectionMode">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;SelectionMode&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsCaretSticky">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsCaretSticky&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.IsPasteConvertEndings">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;IsPasteConvertEndings&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CaretLineBackgroundAlpha">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;CaretLineBackgroundAlpha&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Lexer">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;Lexer&quot;]/*" />
+        </member>
+        <member name="P:Scintilla.ScintillaControl.StyleBitsNeeded">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Properties/Property[@name=&quot;StyleBitsNeeded&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AddText(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AddText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.InsertText(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;InsertText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ClearAll">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ClearAll&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ClearDocumentStyle">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ClearDocumentStyle&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Redo">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Redo&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SelectAll">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SelectAll&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetSavePoint">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetSavePoint&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerLineFromHandle(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerLineFromHandle&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerDeleteHandle(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerDeleteHandle&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PositionFromPoint(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PositionFromPoint&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PositionFromPointClose(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PositionFromPointClose&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GotoLine(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GotoLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GotoPos(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GotoPos&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetCurLine">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetCurLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StartStyling(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StartStyling&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetStyling(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetStyling&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerSetForegroundColor(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerSetForegroundColor&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerSetBackgroundColor(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerSetBackgroundColor&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerAdd(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerAdd&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerDelete(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerDelete&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerDeleteAll(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerDeleteAll&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerGet(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerGet&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerNext(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerNext&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerPrevious(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerPrevious&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerDefinePixmap(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerDefinePixmap&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerAddSet(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerAddSet&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerSetAlpha(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarkerSetAlpha&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleResetDefault">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleResetDefault&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetSelectionForeground(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetSelectionForeground&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetSelectionBackground(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetSelectionBackground&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ClearAllCmdKeys">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ClearAllCmdKeys&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetStylingEx(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetStylingEx&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.BeginUndoAction">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;BeginUndoAction&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EndUndoAction">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EndUndoAction&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetWhiteSpaceForeground(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetWhiteSpaceForeground&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetWhiteSpaceBackground(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetWhiteSpaceBackground&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCShow(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCShow&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCCancel">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCCancel&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCPosStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCPosStart&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCComplete">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCComplete&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCStops(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCStops&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCSelect(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCSelect&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.UserListShow(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;UserListShow&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.RegisterImage(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;RegisterImage&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ClearRegisteredImages">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ClearRegisteredImages&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetSelection(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetSelection&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetSelectedText">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetSelectedText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HideSelection(System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HideSelection&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PointXFromPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PointXFromPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PointYFromPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PointYFromPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineFromPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineFromPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PositionFromLine(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PositionFromLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineScroll(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineScroll&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ScrollCaret">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ScrollCaret&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ReplaceSelection(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ReplaceSelection&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Null">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Null&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EmptyUndoBuffer">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EmptyUndoBuffer&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Undo">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Undo&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Cut">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Cut&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Copy">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Copy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Paste">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Paste&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Clear">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Clear&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetText(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ReplaceTarget(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ReplaceTarget&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ReplaceTargetRE(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ReplaceTargetRE&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SearchInTarget(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SearchInTarget&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipShow(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipShow&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipCancel">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipCancel&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipPosStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipPosStart&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipSetHlt(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipSetHlt&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VisibleFromDocLine(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VisibleFromDocLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DocLineFromVisible(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DocLineFromVisible&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WrapCount(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WrapCount&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ShowLines(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ShowLines&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HideLines(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HideLines&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ToggleFold(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ToggleFold&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EnsureVisible(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EnsureVisible&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetFoldFlags(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetFoldFlags&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EnsureVisibleEnforcePolicy(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EnsureVisibleEnforcePolicy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordStartPosition(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordStartPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordEndPosition(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordEndPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.TextWidth(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;TextWidth&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.TextHeight(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;TextHeight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AppendText(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AppendText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.TargetFromSelection">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;TargetFromSelection&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LinesJoin">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LinesJoin&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LinesSplit(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LinesSplit&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetFoldMarginColor(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetFoldMarginColor&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetFoldMarginHiColor(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetFoldMarginHiColor&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineDown">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineDown&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineDownExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineDownExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineUp">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineUp&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineUpExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineUpExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharLeft&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharLeftExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharLeftExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharRight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharRightExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharRightExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordLeft&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordLeftExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordLeftExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordRight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordRightExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordRightExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Home">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Home&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEnd&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DocumentStart">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DocumentStart&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DocumentStartExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DocumentStartExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DocumentEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DocumentEnd&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DocumentEndExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DocumentEndExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageUp">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageUp&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageUpExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageUpExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageDown">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageDown&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageDownExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageDownExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EditToggleOvertype">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EditToggleOvertype&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Cancel">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Cancel&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DeleteBack">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DeleteBack&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Tab">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Tab&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.BackTab">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;BackTab&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.NewLine">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;NewLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FormFeed">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FormFeed&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VCHome">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VCHome&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VCHomeExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VCHomeExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ZoomIn">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ZoomIn&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ZoomOut">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ZoomOut&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DelWordLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DelWordLeft&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DelWordRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DelWordRight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineCut">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineCut&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineDelete">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineDelete&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineTranspose">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineTranspose&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineDuplicate">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineDuplicate&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Lowercase">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Lowercase&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Uppercase">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Uppercase&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineScrollDown">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineScrollDown&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineScrollUp">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineScrollUp&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DeleteBackNotLine">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DeleteBackNotLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeDisplay">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeDisplay&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeDisplayExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeDisplayExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndDisplay">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndDisplay&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndDisplayExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndDisplayExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeWrap">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeWrap&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeWrapExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeWrapExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndWrap">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndWrap&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndWrapExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndWrapExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VCHomeWrap">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VCHomeWrap&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VCHomeWrapExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VCHomeWrapExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineCopy">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineCopy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MoveCaretInsideView">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MoveCaretInsideView&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineLength(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineLength&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.BraceHighlight(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;BraceHighlight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.BraceBadLight(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;BraceBadLight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.BraceMatch(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;BraceMatch&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SearchAnchor">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SearchAnchor&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SearchNext(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SearchNext&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SearchPrevious(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SearchPrevious&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.UsePopup(System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;UsePopup&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordPartLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordPartLeft&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordPartLeftExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordPartLeftExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordPartRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordPartRight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordPartRightExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordPartRightExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetVisiblePolicy(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetVisiblePolicy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DelLineLeft">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DelLineLeft&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.DelLineRight">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;DelLineRight&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ChooseCaretX">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ChooseCaretX&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GrabFocus">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GrabFocus&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetXCaretPolicy(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetXCaretPolicy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetYCaretPolicy(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetYCaretPolicy&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ParaDown">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ParaDown&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ParaDownExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ParaDownExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ParaUp">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ParaUp&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ParaUpExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ParaUpExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PositionBefore(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PositionBefore&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PositionAfter(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PositionAfter&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CopyRange(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CopyRange&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CopyText(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CopyText&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetLineSelectionStartPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetLineSelectionStartPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetLineSelectionEndPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetLineSelectionEndPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineDownRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineDownRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineUpRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineUpRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharLeftRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharLeftRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CharRightRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CharRightRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HomeRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HomeRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.VCHomeRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;VCHomeRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageUpRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageUpRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PageDownRectExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PageDownRectExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StutteredPageUp">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StutteredPageUp&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StutteredPageUpExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StutteredPageUpExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StutteredPageDown">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StutteredPageDown&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StutteredPageDownExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StutteredPageDownExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordLeftEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordLeftEnd&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordLeftEndExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordLeftEndExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordRightEnd">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordRightEnd&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordRightEndExtend">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordRightEndExtend&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetCharsDefault">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetCharsDefault&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCGetCurrent">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCGetCurrent&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Allocate(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Allocate&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.TargetAsUTF8">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;TargetAsUTF8&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SetLengthForEncode(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SetLengthForEncode&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.EncodedFromUTF8(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;EncodedFromUTF8&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FindColumn(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FindColumn&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ToggleCaretSticky">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;ToggleCaretSticky&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SelectionDuplicate">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;SelectionDuplicate&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StartRecord">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StartRecord&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StopRecord">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StopRecord&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Colorize(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Colorize&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LoadLexerLibrary(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LoadLexerLibrary&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetProperty(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetProperty&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetPropertyExpanded(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;GetPropertyExpanded&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleAt(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleAt&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginTypeN(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginTypeN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginWidthN(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginWidthN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginMaskN(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginMaskN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginSensitiveN(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginSensitiveN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.IndicGetFore(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;IndicGetFore&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineState(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineState&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineIndentation(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineIndentation&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineIndentPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineIndentPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Column(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Column&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineEndPosition(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineEndPosition&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FoldLevel(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FoldLevel&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LastChild(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LastChild&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FoldParent(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FoldParent&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineVisible(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineVisible&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FoldExpanded(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FoldExpanded&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.PropertyInt(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;PropertyInt&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginTypeN(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginTypeN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginWidthN(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginWidthN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginMaskN(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginMaskN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarginSensitiveN(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;MarginSensitiveN&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleClearAll">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleClearAll&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetFore(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetFore&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetBack(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetBack&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetBold(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetBold&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetItalic(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetItalic&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetSize(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetSize&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetFont(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetFont&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetEOLFilled(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetEOLFilled&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetUnderline(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetUnderline&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetHotSpot(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetHotSpot&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetVisible(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetVisible&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WordChars(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WordChars&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineState(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineState&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetChangeable(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;StyleSetChangeable&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.AutoCSetFillUps(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;AutoCSetFillUps&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LineIndentation(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LineIndentation&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipSetBack(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipSetBack&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipSetFore(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipSetFore&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipSetForeHlt(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipSetForeHlt&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.CallTipUseStyle(System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;CallTipUseStyle&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FoldLevel(System.Int32,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FoldLevel&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.FoldExpanded(System.Int32,System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;FoldExpanded&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HotspotActiveFore(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HotspotActiveFore&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HotspotActiveBack(System.Boolean,System.Int32)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HotspotActiveBack&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HotspotActiveUnderline(System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HotspotActiveUnderline&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.HotspotSingleLine(System.Boolean)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;HotspotSingleLine&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.WhitespaceChars(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;WhitespaceChars&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Property(System.String,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;Property&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.KeyWords(System.Int32,System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;KeyWords&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.LexerLanguage(System.String)">
+            <!-- Сбой при вставке некоторых или всех включенных XML --><include file="..\Help\GeneratedInclude.xml" path="root/Methods/Method[@name=&quot;LexerLanguage&quot;]/*" />
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.IntPtr,System.IntPtr)">
+            <summary>
+            This is the primary Native communication method with Scintilla
+            used by this control. All the other overloads call into this one.
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (,)
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Int32,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (int,int)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">wParam</param>
+            <param name="lParam">lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (int,)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">wParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,Scintilla.VOID,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (,int)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="NULL">always pass null--Unused parameter</param>
+            <param name="lParam">lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Boolean,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (bool,int)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">boolean wParam</param>
+            <param name="lParam">int lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Boolean)">
+            <summary>
+            Handles Scintilla Call Style:
+               (bool,)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">boolean wParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Int32,System.Boolean)">
+            <summary>
+            Handles Scintilla Call Style:
+               (int,bool)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">int wParam</param>
+            <param name="lParam">boolean lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.String@)">
+            <summary>
+            Handles Scintilla Call Style:
+               (,stringresult)    
+            Notes:
+             Helper method to wrap all calls to messages that take a char*
+             in the lParam and returns a regular .NET String. This overload
+             assumes there will be no wParam and obtains the string length
+             by calling the message with a 0 lParam. 
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="text">String output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Int32,System.String@)">
+            <summary>
+            Handles Scintilla Call Style:
+               (int,stringresult)    
+            Notes:
+             Helper method to wrap all calls to messages that take a char*
+             in the lParam and returns a regular .NET String. This overload
+             assumes there will be no wParam and obtains the string length
+             by calling the message with a 0 lParam. 
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="text">String output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.IntPtr,System.String@,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (?)    
+            Notes:
+             Helper method to wrap all calls to messages that take a char*
+             in the wParam and set a regular .NET String in the lParam. 
+             Both the length of the string and an additional wParam are used 
+             so that various string Message styles can be acommodated.
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">int wParam</param>
+            <param name="text">String output</param>
+            <param name="length">length of the input buffer</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.Int32,System.String)">
+            <summary>
+            Handles Scintilla Call Style:
+               (int,string)    
+            Notes:
+             This helper method handles all messages that take
+             const char* as an input string in the lParam. In
+             some messages Scintilla expects a NULL terminated string
+             and in others it depends on the string length passed in
+             as wParam. This method handles both situations and will
+             NULL terminate the string either way. 
+            
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">int wParam</param>
+            <param name="lParam">string lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,Scintilla.VOID,System.String)">
+            <summary>
+            Handles Scintilla Call Style:
+               (,string)    
+            
+            Notes:
+             This helper method handles all messages that take
+             const char* as an input string in the lParam. In
+             some messages Scintilla expects a NULL terminated string
+             and in others it depends on the string length passed in
+             as wParam. This method handles both situations and will
+             NULL terminate the string either way. 
+            
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="NULL">always pass null--Unused parameter</param>
+            <param name="lParam">string lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.String,System.String)">
+            <summary>
+            Handles Scintilla Call Style:
+               (string,string)    
+            
+            Notes:
+               Used by SCI_SETPROPERTY
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">string wParam</param>
+            <param name="lParam">string lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.String,System.String@)">
+            <summary>
+            Handles Scintilla Call Style:
+               (string,stringresult)    
+            
+            Notes:
+             This one is used specifically by SCI_GETPROPERTY and SCI_GETPROPERTYEXPANDED
+             so it assumes it's usage
+            
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">string wParam</param>
+            <param name="stringResult">Stringresult output</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.String,System.Int32)">
+            <summary>
+            Handles Scintilla Call Style:
+               (string,int)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">string wParam</param>
+            <param name="lParam">int lParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SendMessageDirect(System.UInt32,System.String)">
+            <summary>
+            Handles Scintilla Call Style:
+               (string,)    
+            </summary>
+            <param name="msg">Scintilla Message Number</param>
+            <param name="wParam">string wParam</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.GetText">
+            <summary>
+            Retrieve all the text in the document. Returns number of characters retrieved. 
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.CodePage">
+            <summary>
+            Get the code page used to interpret the bytes of the document as characters. 
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.ViewWhitespace">
+            <summary>
+            Are white space characters currently visible? Returns one of SCWS_* constants. 
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.EndOfLineMode">
+            <summary>
+            Retrieve the current end of line mode - one of CRLF, CR, or LF. 
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.ConvertEOLs(Scintilla.Enums.EndOfLine)">
+            <summary>
+            Convert all line endings in the document to one mode.
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.MarkerDefine(System.Int32,Scintilla.Enums.MarkerSymbol)">
+            <summary>
+            Set the symbol used for a particular marker number.
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetCharacterSet(System.Int32,Scintilla.Enums.CharacterSet)">
+            <summary>
+            Set the character set of the font in a style.
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.StyleSetCase(System.Int32,Scintilla.Enums.CaseVisible)">
+            <summary>
+            Set a style to be mixed case, or to force upper or lower case.
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.LegacyConfiguration">
+            <summary>
+            Get or set the legacy configuration object
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.LegacyConfigurationLanguage">
+            <summary>
+            Set the Configuration Language for the Legacy Config Support
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.Configuration">
+            <summary>
+            Get or set the configuration object
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.ConfigurationLanguage">
+            <summary>
+            Set the Configuration Language
+            </summary>
+        </member>
+        <member name="P:Scintilla.ScintillaControl.SmartIndentingEnabled">
+            <summary>
+            Enable or disable Smart Indenting
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.SmartIndenting_CharAdded(System.Object,Scintilla.CharAddedEventArgs)">
+            <summary>
+            If Smart Indenting is enabled, this delegate will be added to the CharAdded multicast event.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.IndentLine(System.Int32,System.Int32)">
+            <summary>
+            Smart Indenting helper method
+            </summary>
+            <param name="line"></param>
+            <param name="indent"></param>
+        </member>
+        <member name="F:Scintilla.ScintillaControl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Scintilla.ScintillaControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Scintilla.NotifyHeader">
+            <summary>
+            This matches the Win32 NMHDR structure
+            </summary>
+        </member>
+        <member name="T:Scintilla.LineColumn">
+            <summary>
+            Expresses a position within the Editor by Line # of Column Offset.
+            Use ScintillaControl.LineColumnFromPosition and 
+            ScintillaControl.PositionFromLineColumn to converto to/from a Position
+            (absolute position within the editor)
+            </summary>
+        </member>
+    </members>
+</doc>

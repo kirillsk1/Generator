@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="GrammarCompiler.Access" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessArray.cs</FileName>
+      <HashCode>AQAAAABAIEAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GrammarCompiler.AccessArray" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessArray.cs</FileName>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.AccessSeq" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessArray.cs</FileName>
+      <HashCode>AQAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.CounterDictionary" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CounterDictionary.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAIAAAQAAAAAAAAEAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Counter" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CounterDictionary.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAAACAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.TextDerivation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Derivation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GrammarCompiler.DerivationBase" Collapsed="true">
+    <Position X="1.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Derivation.cs</FileName>
+      <HashCode>AAAAAAAAIAAAAAAAAAgAAAAAAACEABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GrammarCompiler.ListDerivation" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Derivation.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAAAAAEEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.DictionaryDerivation" Collapsed="true">
+    <Position X="2.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Derivation.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAECAAAAAAAAAAEAAAEAAAAAABAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.DerivationContext" Collapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DerivationContext.cs</FileName>
+      <HashCode>AAAACAAAAAAAEAAAAAAAAAAAAAACAAAIAgKIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.GrammarSynaxException" Collapsed="true">
+    <Position X="8.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.LexerInternalException" Collapsed="true">
+    <Position X="8.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.GrammarCounterEndException" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.GrammarTransductorException" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Exceptions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprValue&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AQAAAABAIAAAAgAEAAAAAAAAAAAEAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprDouble" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprInt" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprString" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprEval&lt;T&gt;" Collapsed="true">
+    <Position X="9.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprConfVariable" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprNumber.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ExprBase" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprOp.cs</FileName>
+      <HashCode>AQAAAABAIAAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GrammarCompiler.ExprOp" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprOp.cs</FileName>
+      <HashCode>BQAAAABAIgAAEAgAgAAYAAAAAAAAQIAAAQEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Formatter" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Formatter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.AlternativeSet" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneratorAspect.cs</FileName>
+      <HashCode>AAAAAAAAAJAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Seqence" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneratorAspect.cs</FileName>
+      <HashCode>AAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.QuantifiedPhrase" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneratorAspect.cs</FileName>
+      <HashCode>AAAACAAAQBAAAAAAEAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Symbol" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneratorAspect.cs</FileName>
+      <HashCode>AgAAAABAAAAgEAAAEAAAAAICAAAAAEAAAAAACAUAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.TransCallPhrase" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GeneratorAspect.cs</FileName>
+      <HashCode>AAAgAAAAKAAAAAAAEAAAAAAhAAAAAAAAAQgBQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GrammarCompiler.GenNameBase" Collapsed="true">
+    <Position X="11.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GenList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.GenList" Collapsed="true">
+    <Position X="11.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GenList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.GenStruct" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GenStruct.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Grammar" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Grammar.cs</FileName>
+      <HashCode>IAQAAABAAGIAAAAUAAAhAAIAAgIAQICMQAAAQEhBAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Lexema" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Lexer.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Lexer" Collapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Lexer.cs</FileName>
+      <HashCode>AAYAAAAEAAAAAAAAAAAAAAAAIAEAAAIAIiAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ListTrans" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListTrans.cs</FileName>
+      <HashCode>AAAAAAAAAAAQAAEEAAAAAAQQQIAAIAAAAAAAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.PhraseBase" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Phrase.cs</FileName>
+      <HashCode>AQAAAABAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GrammarCompiler.PhraseList" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Phrase.cs</FileName>
+      <HashCode>AAIABABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.PlaceHolderPhrase" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Phrase.cs</FileName>
+      <HashCode>AQAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.PlaceHolderAssignPhrase" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Phrase.cs</FileName>
+      <HashCode>AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.PhraseParser" Collapsed="true">
+    <Position X="24.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PhraseParser.cs</FileName>
+      <HashCode>AABACAAABAAABAAIABCBCIAIgBDAAggECIgAAAIAMEQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.PlaceHolderList" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PlaceHolder.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ProtocolBase" Collapsed="true">
+    <Position X="7.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProtocolArray.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ProtocolArray" Collapsed="true">
+    <Position X="8.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProtocolArray.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.ProtocolSequence" Collapsed="true">
+    <Position X="6.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProtocolSequence.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarCompiler.Rule" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule.cs</FileName>
+      <HashCode>AQAAAAAAABAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrammarTransductors.SysTransductor" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>transductor.cs</FileName>
+      <HashCode>AAAEAAAAAgAAAIABAAAAAAAAAAAAAAAAAAAAAQBBBAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GrammarCompiler.IDerivation" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Derivation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GrammarCompiler.IExpr" Collapsed="true">
+    <Position X="5.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprOp.cs</FileName>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GrammarCompiler.IPhrase" Collapsed="true">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Phrase.cs</FileName>
+      <HashCode>AQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GrammarCompiler.eOperation" Collapsed="true">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExprOp.cs</FileName>
+      <HashCode>AAMAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GrammarCompiler.LexemType" Collapsed="true">
+    <Position X="21.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Lexer.cs</FileName>
+      <HashCode>IAAABAAAAAIABBAAAQAAAIAAAAAAAAAAgAEACAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

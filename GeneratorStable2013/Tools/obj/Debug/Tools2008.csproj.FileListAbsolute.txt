@@ -1,0 +1,5 @@
+F:\gs\GeneratorStable2013\Tools\bin\Debug\Tools.dll
+F:\gs\GeneratorStable2013\Tools\bin\Debug\Tools.pdb
+F:\gs\GeneratorStable2013\Tools\obj\Debug\ResolveAssemblyReference.cache
+F:\gs\GeneratorStable2013\Tools\obj\Debug\Tools.dll
+F:\gs\GeneratorStable2013\Tools\obj\Debug\Tools.pdb

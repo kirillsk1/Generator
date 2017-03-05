@@ -1,0 +1,4 @@
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\Tools\bin\Debug\Tools.dll
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\Tools\bin\Debug\Tools.pdb
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\Tools\obj\Debug\Tools.dll
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\Tools\obj\Debug\Tools.pdb

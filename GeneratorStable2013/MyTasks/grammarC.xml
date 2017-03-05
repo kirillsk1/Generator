@@ -1,0 +1,51 @@
+<Root>
+  <_programm rr="10" />
+  <statAssigns rr="10 1" />
+  <statFors rr="10 1" />
+  <statIfs rr="10 1" />
+  <bodyStats1 rr="10 1" />
+  <bodyStats rr="10" />
+  <statAssign alg="rnd" rr="10 1" />
+  <realAssign rr="10" />
+  <intAssign rr="10" />
+  <formula rr="10" />
+  <intFormula rr="10" />
+  <addMember rr="10 1" />
+  <addIntMember rr="10 1" />
+  <addMembers rr="10 1" />
+  <addIntMembers rr="10 1" />
+  <addSign rr="10 1" />
+  <number rr="10 1" />
+  <indExpr rr="10" />
+  <forstats rr="10 1" />
+  <ifstats rr="10 1" />
+  <ifthenelsestats rr="10 1" />
+  <statFor rr="10" />
+  <statIf rr="10" />
+  <statIfThenElse rr="10" />
+  <condition alg="rnd" rr="10 1" />
+  <statWhile rr="10" />
+  <whilestats rr="10 1" />
+  <switchstats rr="10 1" />
+  <statSwitch rr="10" />
+  <statcases rr="10 1" />
+  <caseStat rr="10" />
+  <switchToggle rr="10 1" />
+  <statBreak rr="10" />
+  <statContinue rr="10" />
+  <statGoTo rr="10" />
+  <blockvars rr="10" />
+  <def_intArray rr="10" />
+  <def_realArray rr="10" />
+  <def_intIndex rr="10" />
+  <intArray rr="10 1" />
+  <realArray rr="10 1 1" />
+  <intIndex rr="10 1 1 1" />
+  <variables rr="10 1" />
+  <bodyStat alg="enum" rr="10 1 0 0" />
+  <statForstatFor rr="1 1 1 1 0 0 1 0" />
+  <statWhilestatWhile rr="1 1 1 1" />
+  <statIfstatIf rr="1 1 1" />
+  <statIfThenElsestatIfThenElse rr="1 1 1 1" />
+  <statSwitchstatSwitch rr="1 1 1 1" />
+</Root>

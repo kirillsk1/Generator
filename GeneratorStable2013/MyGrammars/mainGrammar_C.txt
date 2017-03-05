@@ -1,0 +1,24 @@
+programm := vars, mainBlock //funcs, procs, vars, mainBlock
+mainBlock := "void main() {", stat{3}  ,"}"
+stat := forStat | ifStat | assignStat
+forStat := "for ( int ",forInd, "=", forFrom, ";", #forInd, forCond, forTo, ";", #forInd, "=", #forInd, "+", "AbsND", ") \n{\n", "stat", "\n}\n"
+forCond := "<=" | "<" 
+forInd := #indVar[0].indName
+forFrom := Rnd(5)
+forTo := Rnd(100)
+
+ifStat := "if (", condition, ")", "{", "stat", "}"
+condition := rightSide, comparison, rightSide
+comparison := "<" | ">" | "==" | "<=" | ">=" | "!="
+assignStat := leftSide, "=", rightSide
+leftSide := #intArr[0].intName
+rightSide := #intArr[0].intName | Rnd(10)
+
+vars ";\n" := intArr{3}, doubleArr{1}, indVar{3}
+intArr  := "int", intName, "[", Rnd(50, 100), "]", ";\n"
+	intName := NameCount("int_")
+doubleArr := "double", doubleName, "[", Rnd(10, 40), "]", ";\n"
+	doubleName := NameCount("double_")
+indVar := "int", indName, ";\n"
+	indName := NameCount("ind_")
+

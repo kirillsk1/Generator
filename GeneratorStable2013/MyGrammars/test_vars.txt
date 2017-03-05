@@ -1,0 +1,27 @@
+_programm := Vars, Funcs, "void main() {", Stats, "}" 
+
+Stats ";\n" := Stat{1}
+Stat := Assign // | For
+Assign := "A = ", #Vars.GetAllDeque().Name //RndItem(ListAdd(Vars, Params)).Name
+For := "for (;;) {", Stats, "}"
+
+Exprs := Add | Add, Adds
+Add := Mul | Mul, Muls
+Mul := Rnd(10) | "(",Exprs,")" | #Vars.GetAllDeque() //VarName //Vars = Global+Func's Vars
+Adds := ("+"|"-"), Exprs
+Muls := ("*"|"/"), Add
+
+Vars ";" := Var{2}
+Var := Type, VarName AS Name, ";\n"
+VarName := NameCount("v")
+Type := "int"
+
+Funcs := Func{2}
+Func := Type, NameCount("func") AS Name,\
+	  "(", Params, ")", \
+	  "{",\
+	    Vars, Assign, \
+	  "}"
+//Fbody := "return", #Params[0].ParamName, "+", #Params[1].ParamName, ";"
+Params ", ":= Param{2}
+Param := Type, NameCount("p") AS Name

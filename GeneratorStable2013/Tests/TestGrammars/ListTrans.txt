@@ -1,0 +1,14 @@
+programm  :=  vars, "--- info--- \n", test1, test2, test3, test4, "---\n", test5
+test1 := #intArr.Count(), #intArr.PeekBegin(), #intArr.Count()
+test2 := #intArr.Count(), #intArr.PopBegin(), #intArr.Count()
+test3 := #intArr.Count(), #intArr.PopEnd(), #intArr.Count()
+test4 := #intArr.AddBegin("hello"), #intArr.Count(), #intArr
+test5 := #intArr.AddBegin(100), #intArr
+
+vars ";\n" := intArr{3}, doubleArr{1}, indVar{3}
+intArr  := "int", intName, "[", Rnd(0), "]", ";\n"
+	intName := NameCount("int_")
+doubleArr := "double", doubleName, "[", Rnd(0), "]", ";\n"
+	doubleName := NameCount("double_")
+indVar := "int", indName, ";\n"
+	indName := NameCount("ind_")

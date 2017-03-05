@@ -1,0 +1,11 @@
+F:\gs\GeneratorStable2013\PrePostProcessing\bin\Debug\PrePostProcessing.exe
+F:\gs\GeneratorStable2013\PrePostProcessing\bin\Debug\PrePostProcessing.pdb
+F:\gs\GeneratorStable2013\PrePostProcessing\obj\Debug\ResolveAssemblyReference.cache
+F:\gs\GeneratorStable2013\PrePostProcessing\obj\Debug\PrePostProcessing.exe
+F:\gs\GeneratorStable2013\PrePostProcessing\obj\Debug\PrePostProcessing.pdb
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\bin\Debug\PrePostProcessing.exe.config
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\bin\Debug\PrePostProcessing.exe
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\bin\Debug\PrePostProcessing.pdb
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\obj\Debug\PrePostProcessing.csprojResolveAssemblyReference.cache
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\obj\Debug\PrePostProcessing.exe
+C:\Users\Kirill\Desktop\GeneratorStable2013_ex\GeneratorStable2013\PrePostProcessing\obj\Debug\PrePostProcessing.pdb

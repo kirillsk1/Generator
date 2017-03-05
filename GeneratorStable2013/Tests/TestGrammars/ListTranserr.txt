@@ -1,0 +1,16 @@
+int int_1 [ 0 ] ;
+ int int_2 [ 0 ] ;
+ int int_3 [ 0 ] ;
+;
+double double_1 [ 0 ] ;
+;
+int ind_1 ;
+ int ind_2 ;
+ int ind_3 ;
+ --- info--- 
+ 3 int int_1 [ 0 ] ;
+ 3 3 int int_1 [ 0 ] ;
+ 2 2 int int_3 [ 0 ] ;
+ 1 hello 2 100 hello int int_2 [ 0 ] ;
+ ---
+ 100 100 hello int int_2 [ 0 ] ;

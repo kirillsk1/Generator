@@ -1,0 +1,1 @@
+int func1 ( int p1, int p2 ) { return p1 + p2 ; } int func2 ( int p3, int p4 ) { return p3 + p4 ; } int int_1;int int_2;int int_3 ; void main() { a= 3;b= 4;func1 ( int_1 , int_2 ) ; }

@@ -1,0 +1,13 @@
+programm  :=  vars, comms,  stat, "-----\n", comms
+stat := for | assign
+for := "for () {", stat, "}"
+assign := left, "=", right
+left := #Gens.AddBegin(vars[0].PopBegin())
+right := "use"
+vars := intArr{3}//, doubleArr{1}, indVar{3}
+intArr  := "int", intName, "[", Rnd(50, 100), "]"
+	intName := NameCount("int_")
+Gens := "ppp"
+UseVars := "qqq"
+comms := "\n /* generators: ", Gens, "\n UseVars: ", UseVars, remove, "\n"
+remove := #Gens.PopEnd(), #UseVars.PopEnd(), "*/"

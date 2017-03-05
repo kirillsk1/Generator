@@ -1,0 +1,2 @@
+program := stat{1..3}
+stat := "for" | "if" |"assign"

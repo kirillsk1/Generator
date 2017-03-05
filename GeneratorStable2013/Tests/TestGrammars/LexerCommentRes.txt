@@ -1,0 +1,52 @@
+Parsing: 'a//'
+
+NotTerminal: 'a'
+
+Parsing: 'abc/*com*/def'
+
+NotTerminal: 'abc'
+NotTerminal: 'def'
+
+Parsing: 'a/b'
+
+NotTerminal: 'a'
+MulOp: '/'
+NotTerminal: 'b'
+
+Parsing: 'a/**/b'
+
+NotTerminal: 'a'
+NotTerminal: 'b'
+
+Parsing: 'a//com'
+
+NotTerminal: 'a'
+
+Parsing: 'a/*com*end*/b'
+
+NotTerminal: 'a'
+NotTerminal: 'b'
+
+Parsing: 'a*b'
+
+NotTerminal: 'a'
+MulOp: '*'
+NotTerminal: 'b'
+
+Parsing: 'a/*com*end/end*/b'
+
+NotTerminal: 'a'
+NotTerminal: 'b'
+
+Parsing: 'xx "hello\nworld" yy'
+
+NotTerminal: 'xx'
+Terminal: 'hello
+world'
+NotTerminal: 'yy'
+
+Parsing: '"hello\\world" "hello\world" "\t"'
+
+Terminal: 'hello\world'
+Terminal: 'helloworld'
+Terminal: 't'

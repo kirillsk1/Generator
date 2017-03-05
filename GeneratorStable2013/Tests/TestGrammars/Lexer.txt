@@ -1,0 +1,13 @@
+programm  :=  vars, "; void main() {", stat, "; }"
+stat := for
+for := "for (ind_1 =", forFrom,  "; ind_1 <=", forTo, "; ind_1 = ind_1 + 1) {", assign, "; }" 
+forFrom := Rnd(10)
+forTo := Rnd(#intArr[0].Expr2 - 1)
+assign:= "debug info:",#forFrom, #forTo, #intArr[0].Expr2  ,"--- int_1[ind_1] = int_2[ind_2 + ", rndNorm ,"]"
+rndNorm := "yo"
+
+//Those are my vars!
+vars := intArr{3}, doubleArr{1}, indVar{3}
+intArr := "int", NameCount("int_"), "[", Rnd(50, 100), "]"
+doubleArr := "double", NameCount("double_"), "[", Rnd(10, 40), "]"
+indVar := "int", NameCount("ind_")

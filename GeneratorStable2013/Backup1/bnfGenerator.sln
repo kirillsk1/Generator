@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{532FBF42-3DA4-4417-98B3-444F90A41C38}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\SciLexer.dll = Lib\SciLexer.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bnfGenerator", "bnfGenerator\bnfGenerator.csproj", "{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrammarCompiler", "GrammarCompiler\GrammarCompiler.csproj", "{F48DC451-3C08-4B8A-87B0-2E151E514DEA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{566DF7B2-73A7-4D7A-BD79-33538E7B8493}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScintillaNET", "ScintillaNET\ScintillaNET.csproj", "{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{DC14E05B-2D2A-45B5-9D1F-406101BA13F2}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48DC451-3C08-4B8A-87B0-2E151E514DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48DC451-3C08-4B8A-87B0-2E151E514DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48DC451-3C08-4B8A-87B0-2E151E514DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48DC451-3C08-4B8A-87B0-2E151E514DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{566DF7B2-73A7-4D7A-BD79-33538E7B8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566DF7B2-73A7-4D7A-BD79-33538E7B8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566DF7B2-73A7-4D7A-BD79-33538E7B8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566DF7B2-73A7-4D7A-BD79-33538E7B8493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC14E05B-2D2A-45B5-9D1F-406101BA13F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC14E05B-2D2A-45B5-9D1F-406101BA13F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC14E05B-2D2A-45B5-9D1F-406101BA13F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC14E05B-2D2A-45B5-9D1F-406101BA13F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

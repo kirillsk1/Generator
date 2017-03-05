@@ -1,0 +1,11 @@
+programm  :=  vars, "--- info--- \n", test1
+//test1 := #intArr[1]
+vars ";\n" := intArr{3}, doubleArr{1}, indVar{3}
+intArr  := "int", intName, "[", Rnd(50, 100), "]", ";\n"
+	intName := NameCount("int_")
+doubleArr := "double", doubleName, "[", Rnd(10, 40), "]", ";\n"
+	doubleName := NameCount("double_")
+indVar := "int", indName, ";\n"
+	indName := NameCount("ind_")
+//test1 := #intArr[Rnd(3)]
+test1 := #intArr[Rnd(3)], #intArr.Count()

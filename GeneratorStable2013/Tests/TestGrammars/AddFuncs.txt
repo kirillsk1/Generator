@@ -1,0 +1,21 @@
+programm  := funcs, vars, "; void main() {", stat, "; }"
+stat ";" := assign1, assign2, call
+assign1 :=  "a=", "3" 
+assign2 :=  "b=", "4" 
+call := #func[0].name, "(",\
+ #var[0].VarName, ",",\
+ #var[1].VarName, ")"
+
+//Funcs
+funcs := func{2}
+func := type, name, "(", params, ")", "{", fbody, "}"
+fbody := "return", #params[0].Expr1, "+", #params[1].Expr1, ";"
+name := NameCount("func")
+params ", ":= param{2}
+param := type, NameCount("p")
+type := "int"
+
+//Those are my vars!
+vars ";":= var{3}
+var := type, VarName
+VarName := NameCount("int_")

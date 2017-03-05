@@ -1,0 +1,227 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5E6F71F-1E38-4AC7-ACB1-4F80D247E9C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bnfGenerator</RootNamespace>
+    <AssemblyName>bnfGenerator</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conf.cs" />
+    <Compile Include="DerivationTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DerivationTree.Designer.cs">
+      <DependentUpon>DerivationTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorList.Designer.cs">
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerationOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerationOptionsForm.Designer.cs">
+      <DependentUpon>GenerationOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrammarDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrammarDoc.Designer.cs">
+      <DependentUpon>GrammarDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphWindow.Designer.cs">
+      <DependentUpon>GraphWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelListDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelListDoc.Designer.cs">
+      <DependentUpon>LevelListDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputDoc.Designer.cs">
+      <DependentUpon>OutputDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DerivationTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DerivationTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerationOptionsForm.resx">
+      <DependentUpon>GenerationOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrammarDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrammarDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphWindow.resx">
+      <DependentUpon>GraphWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelListDoc.resx">
+      <DependentUpon>LevelListDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutputDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SciEditDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SciEditDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SciEditDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SciEditDoc.Designer.cs">
+      <DependentUpon>SciEditDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskDoc.Designer.cs">
+      <DependentUpon>TaskDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrammarCompiler\GrammarCompiler2008.csproj">
+      <Project>{F48DC451-3C08-4B8A-87B0-2E151E514DEA}</Project>
+      <Name>GrammarCompiler2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrePostProcessing\PrePostProcessing.csproj">
+      <Project>{27E5CECA-A344-4841-9050-3F08BD42F5EC}</Project>
+      <Name>PrePostProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScintillaNET\ScintillaNET2008.csproj">
+      <Project>{F9B6DABD-BBC1-4638-8CE6-A5C9506BFDCB}</Project>
+      <Name>ScintillaNET2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualStructure\VisualStructure2008.csproj">
+      <Project>{2B0CEB5D-51B2-484F-9C1C-849FA4D5CA19}</Project>
+      <Name>VisualStructure2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgRun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imOver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imInto.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy $(SolutionDir)Lib\SciLexer.dll $(TargetDir)SciLexer.dll</PostBuildEvent>
+  </PropertyGroup>
+</Project>

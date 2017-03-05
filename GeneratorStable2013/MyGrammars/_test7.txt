@@ -1,0 +1,4 @@
+programm := "void main() {", {assign}, stat, {assign},  "}"
+stat := for
+for := "for (i=0;i<10;i++) {", {assign}, "}"
+assign :=  "a=b"

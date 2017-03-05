@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<supportedItems>
+	<C>
+		<definitions>
+			<intArray type="int" />
+			<realArray type="double" />
+			<intIndex type="int" />
+		</definitions>
+		<statements>
+			<statAssign />
+			<statFor />
+			<statWhile />
+			<statIf />
+			<statIfThenElse />
+			<statBreak />
+			<statContinue />
+			<statSwitch />
+			<statGoTo />
+		</statements>
+	</C>
+</supportedItems>

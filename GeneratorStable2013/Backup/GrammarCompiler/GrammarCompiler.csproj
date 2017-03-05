@@ -1,0 +1,83 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F48DC451-3C08-4B8A-87B0-2E151E514DEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrammarCompiler</RootNamespace>
+    <AssemblyName>GrammarCompiler</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessArray.cs" />
+    <Compile Include="CounterDictionary.cs" />
+    <Compile Include="Derivation.cs" />
+    <Compile Include="DerivationContext.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="ExprOp.cs" />
+    <Compile Include="Formatter.cs" />
+    <Compile Include="GenList.cs" />
+    <Compile Include="GenStruct.cs" />
+    <Compile Include="Grammar.cs" />
+    <Compile Include="GrammarOptions.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="ExprNumber.cs" />
+    <Compile Include="ListTrans.cs" />
+    <Compile Include="Phrase.cs" />
+    <Compile Include="PhraseParser.cs" />
+    <Compile Include="PlaceHolderList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolArray.cs" />
+    <Compile Include="ProtocolSequence.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="transductor.cs" />
+    <Compile Include="VisitorBase.cs" />
+    <Compile Include="VisitorExpandForceEnum.cs" />
+    <Compile Include="VisitorExpandNormRnd.cs" />
+    <Compile Include="VisitorExpandRnd.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{566DF7B2-73A7-4D7A-BD79-33538E7B8493}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
